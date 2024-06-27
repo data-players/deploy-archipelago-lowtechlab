@@ -29,14 +29,6 @@ start-middleware-prod:
 stop-middleware:
 	$(LOCAL) stop middleware
 
-publish-middleware:
-	@echo "Which version?" && \
-	read version && \
-	docker tag archipelago/middleware registry.github.com/data-players/deploy-archipelago2-classic/middleware && \
-	docker tag archipelago/middleware registry.github.com/data-players/deploy-archipelago2-classic/middleware:$$version && \
-	docker push registry.github.com/data-players/deploy-archipelago2-classic/middleware && \
-	docker push registry.github.com/data-players/deploy-archipelago2-classic/middleware:$$version
-
 ## Frontend
 build-frontend:
 	$(LOCAL) build --no-cache frontend
@@ -52,14 +44,6 @@ start-frontend-prod:
 
 stop-frontend:
 	$(LOCAL) stop frontend
-
-publish-frontend:
-	@echo "Which version?" && \
-	read version && \
-	docker tag archipelago/frontend registry.github.com/data-players/deploy-archipelago2-classic/frontend && \
-	docker tag archipelago/frontend registry.github.com/data-players/deploy-archipelago2-classic/frontend:$$version && \
-	docker push registry.github.com/data-players/deploy-archipelago2-classic/frontend && \
-	docker push registry.github.com/data-players/deploy-archipelago2-classic/frontend:$$version
 
 ## Global start/stop
 start-local:
