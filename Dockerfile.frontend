@@ -1,0 +1,26 @@
+FROM node:16-alpine
+
+# Default arguments
+ARG SELECTED_BRANCH=next
+ARG SELECTED_COMMIT=29d5dcd4febe26e0c90ffb251726dbab6842fab4
+
+WORKDIR /archipelago
+
+RUN node -v
+RUN npm -v
+
+RUN apk add --update --no-cache bash alpine-sdk openssh-keygen nano
+
+RUN yarn global add serve nodemon
+
+RUN git clone --branch=${SELECTED_BRANCH} https://github.com/assemblee-virtuelle/archipelago.git /archipelago
+RUN git reset --hard ${SELECTED_COMMIT}
+
+WORKDIR /archipelago/frontend
+
+ADD ./addOn/frontend/ .
+
+RUN yarn install
+
+# yarn build is necessary here to rebuild with correct environment variables
+CMD yarn build && serve -s build -l 4000

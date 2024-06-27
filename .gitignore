@@ -1,0 +1,11 @@
+/data
+/keycloak
+/middleware
+.vscode
+
+.env.local
+.env.prod
+
+.DS_STORE
+
+/dev
