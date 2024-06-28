@@ -28,7 +28,7 @@ const App = () => (
       <ThemeProvider theme={customTheme}>
         <Admin
           disableTelemetry
-          title="Transiscope en Pays Nantais"
+          title="Archipel du Low-Tech Lab"
           authProvider={authProvider}
           dataProvider={dataProvider}
           i18nProvider={i18nProvider}
