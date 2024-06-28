@@ -9,3 +9,6 @@
 .DS_STORE
 
 /dev
+/addOn/frontend/public/env.js
+
+.idea

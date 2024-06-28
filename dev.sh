@@ -5,7 +5,7 @@ function init () {
 }
 
 function update () {
-  source .env.local
+  . ./.env.local
 
   if [ -z $ARCHIPELAGO_VERSION ]
   then
@@ -22,9 +22,14 @@ function update () {
   git checkout --detach $ARCHIPELAGO_VERSION
 
   cd ..
+  git stash --include-untracked
   cp -R addOn/* dev
-  cp .env.local dev/frontend
-  cp .env.local dev/middleware
+  (cd dev && git add . && git commit -am "Local changes")
+  git stash pop
+  cp -R addOn/* dev
+
+  sed 's/fuseki/localhost/g' < .env.local > dev/frontend/.env.local
+  sed 's/fuseki/localhost/g' < .env.local > dev/middleware/.env.local
 
   (cd dev/frontend && yarn)
   (cd dev/middleware && yarn)
@@ -46,4 +51,5 @@ function sync () {
       esac
     done
   )
+  cd ..
 }
