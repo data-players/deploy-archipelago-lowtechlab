@@ -4,7 +4,7 @@ import theme from './config/theme';
 const customTheme = createTheme(theme, {
   palette: {
     primary: {
-      main: '#005259',
+      main: '#8A394E',
     }
   },
 });

@@ -19,7 +19,7 @@ const HomePage = () => {
               component="img"
               height="200px"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "375px", margin: "auto" }}
-              image="/images/icone-carte-pays-nantais.png"
+              image="/images/icon-carte-archipel-ltl.webp"
               alt="icone-carte"
             />
             <CardContent>
@@ -36,12 +36,12 @@ const HomePage = () => {
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
-              image="/images/icons8-annuaire-200.png"
+              image="/images/organizations.png"
               alt="icone-annuaire"
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
-                L'annuaire
+                L'annuaire des orgas
               </CardTitle>
             </CardContent>
           </CardActionArea>
@@ -66,16 +66,16 @@ const HomePage = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} href="/Page/https%3A%2F%2Fdata.nantes.transiscope.org%2Fpages%2Fcest-quoi/show">
+          <CardActionArea component={Link} href="/Page/https%3A%2F%2Fdata.archipel.lowtechlab.org%2Fpages%2Fapropos/show">
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
-              image="/images/transiscope-loupe.png"
-              alt="icone-cest-quoi"
+              image="/images/icon-lowtechlab.png"
+              alt="icone-a-propos"
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
-                C'est quoi ?
+                A propos
               </CardTitle>
             </CardContent>
           </CardActionArea>
@@ -83,33 +83,16 @@ const HomePage = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} href="https://nantes.alternatiba.eu/transiscope-pays-nantais/">
+          <CardActionArea component={Link} href="/Person">
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "245px", margin: "auto" }}
-              image="/images/en-pays-nantais-400x300.png"
+              image="/images/icons8-annuaire-200.png"
               alt="icone-cest-qui"
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
                 C'est qui ?
-              </CardTitle>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid item xs={12} md={6} lg={4}>
-        <Card>
-          <CardActionArea component={Link} href="https://transiscope.org/charte/">
-            <CardMedia
-              component="img"
-              sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
-              image="/images/icons8-accord-160.png"
-              alt="icone-charte"
-            />
-            <CardContent>
-              <CardTitle color="primary" variant="h4">
-                La charte
               </CardTitle>
             </CardContent>
           </CardActionArea>

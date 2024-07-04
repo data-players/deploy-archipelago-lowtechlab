@@ -1,6 +1,6 @@
 {
-  "short_name": "Transiscope en Pays Nantais",
-  "name": "Transiscope en Pays Nantais",
+  "short_name": "Archipel du Low-tech Lab",
+  "name": "Archipel du Low-tech Lab",
   "icons": [
     {
       "src": "favicon.png",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#005259",
+  "theme_color": "#8A394E",
   "background_color": "#ffffff"
 }

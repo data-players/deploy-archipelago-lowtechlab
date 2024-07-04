@@ -1,3 +1,4 @@
+#!/bin/bash
 function init () {
   rm -rf dev
   git clone https://github.com/assemblee-virtuelle/archipelago dev
