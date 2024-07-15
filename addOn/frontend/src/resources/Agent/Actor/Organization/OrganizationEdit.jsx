@@ -27,9 +27,6 @@ export const OrganizationEdit = props => (
         <ReferenceInput reference="Type" source="pair:hasType" filter={{ a: 'pair:OrganizationType' }}>
           <SelectInput optionText="pair:label" />
         </ReferenceInput>
-        <BooleanInput source="custom:charterCompliance" label={
-          <div>Cette organisation adhère aux valeurs de la <a href="https://transiscope.org/charte/">charte Transiscope</a></div>
-        } option={{ defaultChecked: true }} />
         <MultiLinesInput source="pair:homePage" fullWidth />
         <TextInput source="pair:e-mail" fullWidth type="email" />
         <LocationInput source="pair:hasLocation" fullWidth />
