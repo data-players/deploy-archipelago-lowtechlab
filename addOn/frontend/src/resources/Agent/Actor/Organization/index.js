@@ -39,7 +39,7 @@ const resource = {
         image: 'Logo',
         'pair:affiliates': 'A pour membres ( > Personnes)',
         'pair:partnerOf': 'Partenaire de ( > Organisations)',
-        'pair:involvedIn': 'Impliqué dans ( > Evénement)',
+        'pair:involvedIn': 'Impliqué dans ( > Projet ou Evénement)',
         'pair:hasType': 'Type',
         'pair:hasStatus': 'Statut',
         'pair:hasTopic': 'A pour thème ( > Thème)',

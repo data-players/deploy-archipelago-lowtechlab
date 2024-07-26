@@ -56,7 +56,6 @@ export const OrganizationEdit = props => (
       </TabbedForm.Tab>
       <TabbedForm.Tab label="Relations">
         <OrganizationsInput source="pair:partnerOf" />
-        <ProjectsInput source="pair:involvedIn" />
         <EventsInput source="pair:involvedIn" />
         <ThemesInput source="pair:hasTopic" />
         <DocumentsInput source="pair:documentedBy" />

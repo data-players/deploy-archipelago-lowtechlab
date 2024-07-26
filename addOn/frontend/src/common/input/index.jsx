@@ -85,11 +85,5 @@ export const AgentsInput = ({ label, source }) => (
   </ReferenceArrayInput>
 );
 
-export const ProjectsInput = ({ label, source }) => (
-  <ReferenceArrayInput label={label} reference="Project" source={source}>
-    <MultiServerAutocompleteArrayInput optionText="pair:label" shouldRenderSuggestions={value => value.length > 1} noOptionsText="Tapez au moins deux lettres" fullWidth />
-  </ReferenceArrayInput>
-);
-
 export { default as DateTimeInput } from './DateTimeInput';
 export { default as LocationInput } from './LocationInput';
