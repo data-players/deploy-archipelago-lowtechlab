@@ -12,7 +12,6 @@ import { MarkdownInput } from '@semapps/markdown-components';
 import { MultiLinesInput } from '@semapps/input-components';
 import { OrganizationsInput, EventsInput, ThemesInput, DocumentsInput, LocationInput } from '../../../../common/input';
 import Edit from "../../../../layout/edit/Edit";
-import ReificationArrayInput from '../../../../common/input/ReificationArrayInput';
 
 export const OrganizationEdit = props => (
   <Edit redirect="show" {...props}>
@@ -33,26 +32,6 @@ export const OrganizationEdit = props => (
         <ImageInput source="image" accept="image/*">
           <ImageField source="src" />
         </ImageInput>
-      </TabbedForm.Tab>
-      <TabbedForm.Tab label="Membres">
-        <ReificationArrayInput source="pair:organizationOfMembership" reificationClass="pair:MembershipAssociation">
-          <ReferenceInput reference="Person" source="pair:membershipActor">
-            <AutocompleteInput
-              optionText={record => record && `${record['pair:firstName']} ${record['pair:lastName']}`}
-              shouldRenderSuggestions={value => value && value.length > 1}
-              label="Membre"
-              size="small"
-              sx={{
-                mt: 1,
-                mb: '4px',
-                minWidth: 300,
-              }}
-            />
-          </ReferenceInput>
-          <ReferenceInput reference="MembershipRole" source="pair:membershipRole">
-            <SelectInput optionText="pair:label" label="Rôle" />
-          </ReferenceInput>
-        </ReificationArrayInput>
       </TabbedForm.Tab>
       <TabbedForm.Tab label="Relations">
         <OrganizationsInput source="pair:partnerOf" />
