@@ -4,13 +4,15 @@ import {
   SelectInput,
   TabbedForm,
   ImageField,
-  AutocompleteInput,
-  BooleanInput,
 } from 'react-admin';
 import { ReferenceInput, ImageInput } from '@semapps/input-components';
 import { MarkdownInput } from '@semapps/markdown-components';
 import { MultiLinesInput } from '@semapps/input-components';
-import { OrganizationsInput, EventsInput, ThemesInput, DocumentsInput, LocationInput } from '../../../../common/input';
+import { OrganizationsInput, 
+  EventsInput, 
+  ThemesInput, 
+  DocumentsInput, 
+  LocationInput } from '../../../../common/input';
 import Edit from "../../../../layout/edit/Edit";
 
 export const OrganizationEdit = props => (
