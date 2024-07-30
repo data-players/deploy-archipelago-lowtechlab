@@ -1,4 +1,6 @@
-# Déploiement d'Archipelago en mode classic
+# Déploiement de l'Archipel du Low-tech Lab
+
+Pour le consulter : https://archipel.lowtechlab.org
 
 Cet outil est basé sur Archipelago (https://github.com/assemblee-virtuelle/archipelago)
 
@@ -34,6 +36,8 @@ Il est possible de démarrer et de stopper les services un à un avec les comman
 - make start-frontend / make start-frontend-dev / make stop-frontend
 - make start-middleware / make start-middleware-dev / make stop-middleware
 - make start-db / make stop-db
+
+Pour le consulter en local : http://localhost:5173
 
 ## Publier une nouvelle version
 
