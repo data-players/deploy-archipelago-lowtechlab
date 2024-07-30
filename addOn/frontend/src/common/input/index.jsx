@@ -4,6 +4,7 @@ import { ReferenceArrayInput, MultiServerAutocompleteArrayInput } from "@semapps
 import { LexiconCreateDialog, fetchWikidata } from '@semapps/interop-components';
 
 // const ifTwoLetters = ({ q }) => !!(q && q.length > 1);
+// const filterOnlyLabel = { _predicates: ['pair:label'] };
 
 export const OrganizationsInput = ({ label, source }) => (
   <ReferenceArrayInput label={label} reference="Organization" source={source}>

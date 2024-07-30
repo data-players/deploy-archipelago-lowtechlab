@@ -67,7 +67,7 @@ const HomePage = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.nantes.transiscope.org%2Fpages%2Fcest-quoi/show">
+          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.archipel.lowtechlab.org%2Fpages%2Fapropos/show">
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
@@ -84,7 +84,7 @@ const HomePage = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} to="https://nantes.alternatiba.eu/transiscope-pays-nantais/" target="_blank">
+          <CardActionArea component={Link} to="/Person">
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "245px", margin: "auto" }}
