@@ -15,7 +15,7 @@ const HomePage = () => {
     <Grid container spacing={2} sx={{ marginY: 2 }}>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} to="/Organization?perPage=500&sort=pair%3Alabel&view=map&lat=47.2186353776589&lng=-1.5545654296875002&zoom=10">
+          <CardActionArea component={Link} to="/Organization?view=map">
             <CardMedia
               component="img"
               height="200px"
