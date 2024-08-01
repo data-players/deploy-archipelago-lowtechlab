@@ -15,6 +15,23 @@ const HomePage = () => {
     <Grid container spacing={2} sx={{ marginY: 2 }}>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
+          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.archipel.lowtechlab.org%2Fpages%2Fapropos/show">
+            <CardMedia
+              component="img"
+              sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
+              image="/images/icon-lowtechlab.png"
+              alt="icone-cest-quoi"
+            />
+            <CardContent>
+              <CardTitle color="primary" variant="h4">
+                A propos
+              </CardTitle>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid item xs={12} md={6} lg={4}>
+        <Card>
           <CardActionArea component={Link} to="/Organization?view=map">
             <CardMedia
               component="img"
@@ -25,7 +42,24 @@ const HomePage = () => {
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
-                Où ?
+                Carte géo
+              </CardTitle>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid item xs={12} md={6} lg={4}>
+        <Card>
+          <CardActionArea component={Link} target="_blank" to="https://lowtechlab.flod.io">
+            <CardMedia
+              component="img"
+              sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
+              image="/images/carto-flodio.png"
+              alt="icone-flodio"
+            />
+            <CardContent>
+              <CardTitle color="primary" variant="h4">
+                Carte en réseau
               </CardTitle>
             </CardContent>
           </CardActionArea>
@@ -59,24 +93,7 @@ const HomePage = () => {
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
-                Quand ?
-              </CardTitle>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid item xs={12} md={6} lg={4}>
-        <Card>
-          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.archipel.lowtechlab.org%2Fpages%2Fapropos/show">
-            <CardMedia
-              component="img"
-              sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
-              image="/images/icon-lowtechlab.png"
-              alt="icone-cest-quoi"
-            />
-            <CardContent>
-              <CardTitle color="primary" variant="h4">
-                Quoi ?
+                Calendrier
               </CardTitle>
             </CardContent>
           </CardActionArea>
@@ -93,7 +110,7 @@ const HomePage = () => {
             />
             <CardContent>
               <CardTitle color="primary" variant="h4">
-                Qui ?
+                Annuaire
               </CardTitle>
             </CardContent>
           </CardActionArea>

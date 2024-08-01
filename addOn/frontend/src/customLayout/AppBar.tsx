@@ -51,11 +51,11 @@ const AppBar = () => {
         </Box>
 
         <Stack sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }} spacing={2} direction="row">
-          <Button color="inherit" size="large" target="_blank" startIcon={<NetworkIcon />} component={Link} to={'https://lowtechlab.flod.io'}>
-            Carte en réseau
-          </Button>
           <Button color="inherit" size="large" startIcon={<MapIcon />} component={Link} to={'/Organization?view=map'}>
             Carte géo
+          </Button>
+          <Button color="inherit" size="large" target="_blank" startIcon={<NetworkIcon />} component={Link} to={'https://lowtechlab.flod.io'}>
+            Carte en réseau
           </Button>
           <Button color="inherit" size="large" startIcon={<PeopleIcon />} component={Link} to={'/Person'}>
             Annuaire
