@@ -1,7 +1,7 @@
 const dataServers = {
   a: {
     name: 'Archipel Low-Tech Lab',
-    baseUrl: process.env.VITE_MIDDLEWARE_URL,
+    baseUrl: "https://data.archipel.lowtechlab.org/",
     authServer: true,
     default: true,
     uploadsContainer: '/files'
