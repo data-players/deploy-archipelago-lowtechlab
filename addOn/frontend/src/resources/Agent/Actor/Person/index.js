@@ -18,7 +18,7 @@ const resource = {
   dataModel: {
     types: ['pair:Person'],
     list: {
-      servers: '@default',
+      // servers: '@default',
       forceArray: ['pair:actorOfMembership']
     },
     fieldsMapping: {

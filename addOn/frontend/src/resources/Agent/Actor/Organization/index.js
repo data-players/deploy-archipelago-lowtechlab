@@ -20,7 +20,7 @@ const resource = {
   dataModel: {
     types: ['pair:Organization'],
     list: {
-      servers: '@default',
+      // servers: '@default',
       forceArray: ['pair:organizationOfMembership']
     },
     fieldsMapping: {

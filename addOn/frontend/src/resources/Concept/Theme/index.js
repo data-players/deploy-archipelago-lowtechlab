@@ -20,7 +20,7 @@ const resource = {
   dataModel: {
     types: ['pair:Theme'],
     list: {
-      servers: '@default',
+      // servers: '@default',
       blankNodes: []
     },
     fieldsMapping: {

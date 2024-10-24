@@ -20,7 +20,7 @@ const resource = {
   dataModel: {
     types: ['pair:Project'],
     list: {
-      servers: '@default'
+      // servers: '@default'
     },
     fieldsMapping: {
       title: 'pair:label'

@@ -2,12 +2,14 @@ import config from "./config";
 
 const dataServers = {
   default: {
+    name: "Low-tech Lab",
     baseUrl: config.middlewareUrl,
     authServer: true,
     default: true,
     uploadsContainer: '/files'
   },
   glocal: {
+    name: "Glocal",
     baseUrl: 'https://data.gl.assemblee-virtuelle.org/',
     externalLinks: true,
   },
