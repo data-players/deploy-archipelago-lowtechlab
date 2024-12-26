@@ -1,12 +1,14 @@
 import { createTheme } from '@mui/material/styles';
-import theme from './config/theme';
+import baseTheme from '../config/theme';
 
 declare module '@mui/material/styles' {
   interface Palette {
+    tertiary: Palette['primary'];
     white: Palette['primary'];
   }
 
   interface PaletteOptions {
+    tertiary?: PaletteOptions['primary'];
     white?: PaletteOptions['primary'];
   }
 }
@@ -17,22 +19,25 @@ declare module '@mui/material/Button' {
   }
 }
 
-const customTheme = createTheme(theme, {
+const theme = createTheme(baseTheme, {
   palette: {
     primary: {
       main: '#76142f',
       contrastText: '#fff'
     },
     secondary: {
-      main: '#ff9902',
+      main: '#C5DA89',
     },
     tertiary: {
-      main: '#03ad78',
+      main: '#F1E276',
     },
     white: {
       main: '#fff'
+    },
+    background: {
+      default: '#fff',
     }
   },
 });
 
-export default customTheme;
+export default theme;

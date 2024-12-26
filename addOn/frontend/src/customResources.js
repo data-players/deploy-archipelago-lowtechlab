@@ -1,25 +1,14 @@
 import rawResources from './resources';
 
-const customizedResources = {...rawResources};
+const customizedResources = { ...rawResources };
 
 // Remove unwanted resources
 delete customizedResources['Group'];
 delete customizedResources['Task'];
 delete customizedResources['Idea'];
 
-// Remove parent link to simplify TreeMenu
-const noParentResources = ['Event', 'Project', 'Organization', 'Person', 'Skill'];
-Object.keys(customizedResources).forEach(key => {
-  if (noParentResources.includes(key)) {
-    customizedResources[key].config.options.parent = undefined;
-  }
-});
-
-// Change list fetching method to container
-Object.keys(customizedResources).forEach(key => {
-  if (customizedResources[key].dataModel?.list) {
-    customizedResources[key].dataModel.list.fetchContainer = true;
-  }
-});
+// Change "Organisation" to "Alternative" wording
+customizedResources['Organization'].translations.fr.name = 'Liste des organisations |||| Liste des organisations';
+customizedResources['Organization'].translations.fr.searchLabel = 'Rechercher une alternative';
 
 export default customizedResources;
