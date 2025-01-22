@@ -8,6 +8,8 @@ import MapIcon from '@mui/icons-material/Map';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ListIcon from '@mui/icons-material/List';
 import HubOutlinedIcon from '@mui/icons-material/HubOutlined';
+import ForumIcon from '@mui/icons-material/Forum';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 
 const MainTitle = styled(Typography)(({ theme }) => ({
   fontSize: '23px',
@@ -126,7 +128,25 @@ const HomePage = () => {
               externalLink
             />
           </Grid>
+          <Grid xs={12} md={6}>
+            <MainCard
+              icon={<ForumIcon />}
+              title="Discussions avec l'Archipel"
+              description="Rejoignez le discord pour participer aux appels mensuels et partager avec les autres communautés "
+              link="https://discord.com/invite/7d9kjjn6ta"
+              externalLink
+            />
+          </Grid>
+          <Grid xs={12} md={6}>
+            <MainCard
+              icon={<PermContactCalendarIcon />}
+              title="Annuaire"
+              description="Retrouver les membres de la communauté"
+              link="/person"
+            />
+          </Grid>
         </Grid>
+        
 
         <Grid xs={12} textAlign="center">
           <Box
