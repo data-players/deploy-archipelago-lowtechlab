@@ -39,7 +39,7 @@ module.exports = {
     webacl: {
       superAdmins: []
     },
-    sparqlEndpoint: false,
+    sparqlEndpoint: true,
     webid: {
       path: 'users',
     },
