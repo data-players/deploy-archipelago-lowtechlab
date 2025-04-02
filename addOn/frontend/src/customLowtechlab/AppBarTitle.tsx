@@ -17,7 +17,7 @@ const AppBarTitle = () => {
   return (
     <AppTitle component="div" variant="h6">
       <Link to="/" color="inherit" underline="none">
-        Archipel du Low-tech Lab
+        Archipel des Communautés
       </Link>
     </AppTitle>
   );
